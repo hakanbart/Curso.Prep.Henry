@@ -6,7 +6,7 @@ const nuevaString = 'hola';
 const nuevoNum = 8;
 
 // Crea una variable booleana:
-const nuevoBool = false ;
+const nuevoBool = trust ;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -27,7 +27,7 @@ const nuevoModulo = 21 % 5 === null;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return "str";
+  return str;
 }
 
 function suma(x, y) {
@@ -67,9 +67,9 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (str1.length === str2.length) {
-    return "true"
+    return true
   } else {
-    return "false" 
+    return false
   }
    
 
@@ -80,9 +80,9 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num < 90){
-    return "true"
+    return true
   }else{
-    return "false"
+    return false
   }
 }
 
@@ -91,9 +91,9 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num>50){
-    return "true"
+    return true
   }else{
-    return "false"
+    return false
   }
 }
 
@@ -108,9 +108,9 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num % 2 === 0){
-    return "true"
+    return true
   }else{
-    return "false"
+    return false
   }
 }
 
@@ -118,10 +118,10 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 !== 0){
-    return "true"
+  if (num % 2 === 1) {
+    return true
   }else{
-    return "false"
+    return false
   }
 }
 
@@ -129,6 +129,7 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
+ 
   return Math.pow(num,2)
 }
 
@@ -173,26 +174,27 @@ function esPositivo(numero) {
   else if (num < 0) {
     return "Es negativo"
   } else
-  return "false"
+  return false
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return "str"+ "!"
+  return str+ "!"
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return "nombre" + " " + "apellido" ;
+  return nombre + " " + apellido ;
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
+  // return ´hola ${nombre}! 
   return "hola "+ "Martin!"
 }
 
@@ -232,6 +234,15 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   
+  if (letra.length>1){
+    return "datoincorrecto"
+  }
+  else if(letra== "a" || letra== "e" || letra== "i" || letra== "o" ||letra== "u" ) {
+    return "es vocal"
+  }
+  else{
+    return "dato incorrecto"
+  }
 }
 
 
@@ -273,4 +284,4 @@ module.exports = {
   areaDelTriangulo,
   deEuroAdolar,
   esVocal,
-};
+}};
