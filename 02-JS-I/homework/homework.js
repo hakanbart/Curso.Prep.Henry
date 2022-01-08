@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = 'hola';
+const nuevaString = "hello";
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 8;
 
@@ -15,7 +15,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -81,7 +81,7 @@ function menosQueNoventa(num) {
   // Tu código:
   if (num < 90){
     return true
-  }else{
+  } else {
     return false
   }
 }
@@ -92,7 +92,7 @@ function mayorQueCincuenta(num) {
   // Tu código:
   if (num>50){
     return true
-  }else{
+  } else {
     return false
   }
 }
@@ -109,7 +109,7 @@ function esPar(num) {
   // Tu código:
   if (num % 2 === 0){
     return true
-  }else{
+  } else {
     return false
   }
 }
@@ -188,7 +188,8 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return nombre + " " + apellido ;
+  return nombre + " " + apellido 
+ }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
@@ -201,7 +202,7 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  return (alto*ancho);
+  return (alto * ancho)
 }
 
 
@@ -240,7 +241,7 @@ function esVocal(letra){
   else if(letra== "a" || letra== "e" || letra== "i" || letra== "o" ||letra== "u" ) {
     return "es vocal"
   }
-  else{
+  else {
     return "dato incorrecto"
   }
 }
@@ -284,4 +285,4 @@ module.exports = {
   areaDelTriangulo,
   deEuroAdolar,
   esVocal,
-}};
+};
