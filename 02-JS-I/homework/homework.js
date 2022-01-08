@@ -6,7 +6,7 @@ const nuevaString = "hello";
 const nuevoNum = 8;
 
 // Crea una variable booleana:
-const nuevoBool = trust ;
+const nuevoBool = false ;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -130,19 +130,19 @@ function elevarAlCuadrado(num) {
   // ojo: No es raiz cuadrada!
   // Tu código:
  
-  return Math.pow(num,2)
+  return num * num 
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  Math.pow(num,3)
+  return Math.pow(num,3)
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  Math.pow(num, exponent)
+  return Math.pow(num, exponent)
 }
 
 function redondearNumero(num) {
@@ -168,20 +168,22 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (num > 0){
+ 
+  if (numero > 0) {
     return "Es positivo"
   }
-  else if (num < 0) {
+  else if (numero < 0) {
     return "Es negativo"
-  } else
+  } else {
   return false
+ }
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return str+ "!"
+  return str + "!"
 }
 
 function combinarNombres(nombre, apellido) {
@@ -196,7 +198,7 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
   // return ´hola ${nombre}! 
-  return "hola "+ "Martin!"
+  return 'Hola '+nombre+'!'
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -216,7 +218,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  return (lado*lado)/2
+  return (base*altura)/2
 }
 
 
@@ -236,13 +238,13 @@ function esVocal(letra){
   //Escribe tu código aquí
   
   if (letra.length>1){
-    return "datoincorrecto"
+    return "Dato incorrecto"
   }
-  else if(letra== "a" || letra== "e" || letra== "i" || letra== "o" ||letra== "u" ) {
-    return "es vocal"
+  else if(letra=== 'a' || letra=== 'e' || letra=== 'i' || letra=== 'o' ||letra=== 'u' ) {
+    return "Es vocal"
   }
   else {
-    return "dato incorrecto"
+    return "Dato incorrecto"
   }
 }
 
