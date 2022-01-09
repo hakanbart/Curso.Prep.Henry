@@ -212,7 +212,7 @@ function tieneTresDigitos(numero){
   // return false
   // }
 
-  if (numero > 99 && numero < 1000) {
+  if (numero >= 100 && numero <=999) {
     return true
   } else{
     return false
