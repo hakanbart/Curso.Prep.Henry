@@ -26,11 +26,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  //en la pag mdn de modzilla podes ver el .map
+  // en la pag mdn de modzilla podes ver el .map
   
   //for (var i= 0; i <array.lenght; i++) {
   //  array [i] = array [i] + 1
-  //}
+  // }
   // return array
   var array1 = array.map((elemento) => elemento +1)
 
